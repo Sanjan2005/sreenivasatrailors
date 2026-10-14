@@ -1,24 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
+import { createFileRoute } from '@tanstack/react-router';
+import { Hero, TrustStrip, Services, About, Reviews, Visit } from '@/components/site/sections';
+export const Route = createFileRoute('/')({
+ head:()=>({meta:[{title:'Sreenivasa Tailors | Your perfect fit in HSR Layout'},{name:'description',content:'Thoughtful custom tailoring and precision alterations at Sreenivasa Tailors, HSR Layout, Bengaluru. Rated 4.8 by 369 Google reviewers. Call to arrange your fitting.'},{property:'og:title',content:'Sreenivasa Tailors | A perfect fit. A lasting impression.'},{property:'og:description',content:'Personal tailoring and alterations in HSR Layout, Bengaluru. Discover our services and arrange a fitting.'},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),
+ component:Index,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+function Index(){return <><Hero /><TrustStrip /><Services /><About /><Reviews /><Visit /></>;}
