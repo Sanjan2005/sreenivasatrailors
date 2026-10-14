@@ -156,7 +156,7 @@
  .site-container { padding-inline:24px; } .site-header { height:80px; } .brand-mark { width:36px;height:36px; } .brand-title { font-size:22px; } .brand-subtitle { font-size:8px; }
  .desktop-nav,.header-call { display:none; } .mobile-menu-button { display:inline-flex; } .mobile-nav { display:flex; flex-direction:column; gap:4px; border-top:1px solid var(--border); padding-block:12px; }
  .hero { min-height:610px; height:auto; } .hero-image { object-position:65% center; } .hero::after { background:linear-gradient(90deg,oklch(0.19 0.032 159 / 92%),oklch(0.19 0.032 159 / 52%)); }
- .hero-content { padding-top:65px;padding-bottom:80px; } .hero h1 { font-size:56px; max-width:400px; } .hero-description { max-width:315px; font-size:13px; }
+ .hero-content { padding-top:45px;padding-bottom:65px; } .hero h1 { font-size:46px; max-width:400px; } .hero-description { max-width:315px; font-size:13px; }
  .hero-actions { flex-wrap:wrap; } .hero-location { bottom:23px; left:24px; right:auto; } .hero-proof { margin-top:30px; }
  .trust-grid { grid-template-columns:1fr 1fr; padding-block:13px; gap:8px; } .trust-item { justify-content:start; font-size:10px; gap:9px; padding-block:12px; } .trust-item + .trust-item { border-left:0; }
  .section { padding-block:58px; } .section h2,.inner-heading h1 { font-size:39px; } .section-heading { flex-wrap:wrap; gap:22px; } .section-heading .text-link { margin-top:0; }
